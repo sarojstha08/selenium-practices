@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import time
-import re
+import re #for regular expression
 import random
 import string
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -48,10 +48,22 @@ def random_name():
 #phone number
 def random_number():
     return "+977-98" + ''.join(random.choices(string.digits, k=8))
+
+
+#subject
+def random_subject():
+    return ''.join(random.choices(string.ascii_letters, k=8))
+
+#queries
+def random_queries():
+    return ''.join(random.choices(string.ascii_letters, k=20))
+
 #generate values
 email=generate_random_email()
 name=random_name()
 number=random_number()
+subject=random_subject()
+queries=random_queries()
 #check if empty
 if not name:
     print("this field cannot be empty")
@@ -73,6 +85,14 @@ time.sleep(2)
 
 phone_field.clear()
 phone_field.send_keys(number)
+time.sleep(2)
+
+subject_field.clear()
+subject_field.send_keys(subject)
+time.sleep(2)
+
+queries_field.clear()
+queries_field.send_keys(queries)
 time.sleep(2)
 
 
