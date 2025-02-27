@@ -24,10 +24,10 @@ password = driver.findElement(By.xpath("//input[@id='password']"))
 login_button = driver.findElement(By.xpath("//input[@id='login-button']"))
 
 username.send_keys("standard_user")
-time.sleep(2)
+time.sleep(3)
 
 password.send_keys("secret_sauce")
-time.sleep(2)
+time.sleep(3)
 
 login_button.click()
 

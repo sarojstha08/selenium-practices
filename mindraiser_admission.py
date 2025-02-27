@@ -47,7 +47,7 @@ Queries= driver.find_element(By.XPATH,("//textarea[@id='question']"))
 
 Name.send_keys("Saroj")
 time.sleep(2)
-Email.send_keys("sarojstha7887@gmail.com")
+Email.send_keys("sarojstha000@gmail.com")
 time.sleep(2)
 Phone.send_keys("9823119243")
 time.sleep(2)
@@ -59,34 +59,13 @@ course.select_by_index(3)
 time.sleep(2)
 shedule.select_by_index(2)
 time.sleep(2)
-# Interested_course.select_by_visible_text("Quality Assurance Training in Nepal")
-# time.sleep(2)
-# Preferred_schedule.select_by_visible_text("Evening")
-# time.sleep(2)
-# Internship.click()
-# time.sleep(2)
+
 Queries.send_keys("If you have any queries then please visit our main branch at putalisadak,, opposite to edwise academy!!")
 time.sleep(2)
 
 #scrolling the page
 
 driver.execute_script("window.scrollBy(0,500)")
-time.sleep(2)
 
-# username.send_keys("standard_user")
-# time.sleep(2)
-
-# password.send_keys("secret_sauce")
-# time.sleep(2)
-
-# login_button.click()
-
-# title = driver.current_url
-
-# if (title== "https://www.saucedemo.com/inventory.html"):
-#     print("Login Successful")
-# else:
-#     print("Login Unsuccessful")
- 
 time.sleep(3)
 driver.quit()
