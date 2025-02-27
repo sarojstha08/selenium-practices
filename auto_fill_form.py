@@ -11,9 +11,9 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 url="https://www.mindrisers.com.np/contact-us"
 driver.get(url)
 driver.maximize_window()
-time.sleep(2)
+time.sleep(3)
 driver.execute_script("window.scrollBy(0,600);")
-time.sleep(2)
+time.sleep(3)
 
 #finding input places
 Name_field=driver.find_element(*(By.XPATH,"//input[@placeholder='Name']"))
